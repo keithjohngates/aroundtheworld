@@ -1,3 +1,3 @@
 source venv/bin/activate
-gunicorn --workers 5 --bind unix:simpleapp.sock -m 007 src:app
+gunicorn --workers 5 --bind unix:aroundtheworld.sock -m 007 src:app
 deactivate
