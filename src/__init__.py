@@ -3,6 +3,11 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def hello_world():
+def index():
     return render_template('header.html')
     #return 'Hello there, welcome to our app!'
+
+
+@app.route('/map')
+def map_page():
+    return render_template('map.html')
