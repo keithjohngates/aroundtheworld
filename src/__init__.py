@@ -18,6 +18,9 @@ def home():
 def projects():
     return render_template('projects.html')
 
+@app.route("/build_website")
+def build_website():
+    return render_template('build_website.html')
 
 @app.route("/map")
 def map_page():
